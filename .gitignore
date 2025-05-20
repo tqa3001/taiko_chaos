@@ -1,5 +1,6 @@
-# Ignore virtual environment
-taiko_venv/
+# Project specific
+tmp/
+pretrained_models/
 
 # Python cache and build artifacts
 __pycache__/
