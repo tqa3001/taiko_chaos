@@ -1,5 +1,5 @@
 # Project specific
-tmp/
+output/
 pretrained_models/
 
 # Python cache and build artifacts
