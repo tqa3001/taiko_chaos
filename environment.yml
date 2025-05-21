@@ -11,5 +11,5 @@ dependencies:
       - matplotlib
       - spleeter
       - soundfile
-      - sounddevice
       - pygame
+      - yt-dlp

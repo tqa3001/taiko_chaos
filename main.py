@@ -112,8 +112,8 @@ while running:
 
         drum_hit = (drum_hit_frames_left == drum_hit_length_in_frames - 1)
         is_correct_note = (drum_color == c["color"])
-        is_within_range = (abs(c["x"] - drum_circle[0]) < 13)
-        is_within_scoring_range = (abs(c["x"] - drum_circle[0]) < 10)
+        is_within_range = (abs(c["x"] - drum_circle[0]) < 15)
+        is_within_scoring_range = (abs(c["x"] - drum_circle[0]) < 12)
 
         if not c["disabled"] and drum_hit and is_within_range:
             if is_within_scoring_range and is_correct_note:
