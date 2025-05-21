@@ -1,4 +1,8 @@
-$env:AUDIO_IN = ".\example"
+param (
+    [string]$track
+)
+
+$env:AUDIO_IN = ".\input"
 $env:AUDIO_OUT = ".\output"
 $env:MODEL_DIRECTORY = ".\spleeter_models"
 
@@ -8,7 +12,7 @@ if (-not (Test-Path $env:AUDIO_OUT)) { New-Item -ItemType Directory -Path $env:A
 if (-not (Test-Path $env:MODEL_DIRECTORY)) { New-Item -ItemType Directory -Path $env:MODEL_DIRECTORY }
 
 # Join audio file names with space for multiple files
-$audioFiles = "vocaloid.mp3" # ,"audio_2.mp3"
+$audioFiles = $track # ,"audio_2.mp3"
 $inputFiles = $audioFiles | ForEach-Object { "/input/$($_)" } | Out-String
 $inputFiles = $inputFiles -replace "\s+", ""  # clean up spaces
 
