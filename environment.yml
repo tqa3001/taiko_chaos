@@ -2,7 +2,7 @@ name: taiko_env
 channels:
   - conda-forge
 dependencies:
-  - python=3.11
+  - python=3.8
   - ffmpeg
   - libsndfile
   - pip
@@ -12,3 +12,4 @@ dependencies:
       - spleeter
       - soundfile
       - sounddevice
+      - pygame

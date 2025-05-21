@@ -1,6 +1,6 @@
 # Project specific
 output/
-pretrained_models/
+spleeter_models/
 
 # Python cache and build artifacts
 __pycache__/
