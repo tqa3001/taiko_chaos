@@ -14,14 +14,14 @@ def get_note_onsets(trackFile: str, mode: GenerationMode) -> List[float]:
     output_folder = os.path.join('output', track_name)
 
     if not os.path.isdir(output_folder):
-        print(f"Seperating parts for ${trackFile} ...")
+        print(f"Seperating parts for {trackFile} ...")
         subprocess.run(["powershell", 
                         "-ExecutionPolicy", "Bypass", 
                         "-File", "spleeter_separater_helper.ps1",
                         trackFile])
         print("Seperation finished!")
     else:
-        print(f"Track ${trackFile} is already separated, skipping spleeter step")
+        print(f"Track {trackFile} is already separated, skipping spleeter step")
 
     instrument = 'drums'
     input_wav = os.path.join(output_folder, instrument + '.wav')

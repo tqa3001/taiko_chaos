@@ -33,4 +33,4 @@ def get_mp3_from_youtube(name, url, max_duration_minutes=5):
         ydl.download([url])
         print(f"Download completed: ${outtmpl}")
 
-get_mp3_from_youtube("PSYQUI_song", "https://www.youtube.com/watch?v=mEQZNRT6Pqk")
+get_mp3_from_youtube("The Adults Are Talking", "https://www.youtube.com/watch?v=o4qsjmLxhow", 5.5)
